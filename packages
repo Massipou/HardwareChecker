@@ -1,0 +1,1 @@
+sudo apt-get install php php-fpm php-curl php-cli php-zip php-mysql php-xml -y

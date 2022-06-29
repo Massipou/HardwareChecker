@@ -1,0 +1,8 @@
+var Heath = 
+{
+    disk : "OK",
+    wifi : "error",
+    bluetooth : "OK",
+    audio : "OK",
+    battery : "error"
+};

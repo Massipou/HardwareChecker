@@ -1,0 +1,7 @@
+WARNING: Signal overflow!
+ WARNING: Found low peak 0,67 Hz, very close to DC
+ WARNING: Found low peak 4,71 Hz, very close to DC
+ FAIL: Peak freq too high 915,16 Hz
+ FAIL: Peak freq too high 918,53 Hz
+ FAIL: Peak freq too high 921,22 Hz
+ FAIL: Peak freq too high 1374,09 Hz

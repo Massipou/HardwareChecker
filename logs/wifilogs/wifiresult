@@ -1,0 +1,5 @@
+IN-USE  BSSID              SSID             MODE   CHAN  RATE      SIGNAL  BARS  SECURITY    
+        CC:19:A8:D1:8A:90  SFR_8A8F         Infra  11    260 Mb/s  87      ▂▄▆█  WPA1 WPA2   
+*       CC:19:A8:D1:8A:91  SFR_8A8F         Infra  100   540 Mb/s  85      ▂▄▆█  WPA1 WPA2   
+        CC:19:A8:D1:8A:97  --               Infra  100   540 Mb/s  85      ▂▄▆█  WPA2        
+        34:27:92:F2:CF:1A  FreeWifi_secure  Infra  6     195 Mb/s  55      ▂▄__  WPA2 802.1X 
