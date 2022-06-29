@@ -4,7 +4,7 @@ fantester/fantester &
 while [ "$start" == "true" ]
 do
 	cputemp=$(sensors| grep 'CPU' | sed -E 's/\s|CPU:|s|C|°|\..*//g'| sed 's/+//')	# degrees
-	fanspeed=$(sensors| grep 'Processor Fan' |sed -E 's/Processor Fan:|RPM|\s//g')	# RPM
+	fanspeed=$(sensors| grep 'Processor Fan' |sed -E 's/Processor Fan:|RPM|\s//g'|sed 's/(.*)//g')	# RPM
 	echo "CPU temperature: $cputemp °C / CPU Fan Speed: $fanspeed RPM" > logs/fanlogs/fanlogs
 	cat logs/fanlogs/fanlogs
 

@@ -58,7 +58,7 @@
                 </div>
                 <div class="navbar-nav w-100">
                     <a href="index.html" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
-                    <a href="testlauncher.html" target="_blank" rel="noopener noreferrer" class="nav-item nav-link"><i class="fa-solid fa-play me-2"></i>Launch tests</a>
+                    <a href="testlauncher.html" class="nav-item nav-link"><i class="fa-solid fa-play me-2"></i>Launch tests</a>
                     <a href="index.html" class="nav-item nav-link"><i class="fa-solid fa-list me-2"></i>Inventoy</a>
                     <a href="webcam_tester" target="_blank" rel="noopener noreferrer" class="nav-item nav-link"><i class="fa-solid fa-video me-2"></i>Webcam Tester</a>
                     <div class="nav-item dropdown">
@@ -157,7 +157,7 @@
                 <div class="bg-secondary rounded-top p-4">
                     <div class="row">
                         <h3> Inventory: </h3>
-                        <iframe src="http://localhost/logs/inventory.html" style="height: 500px; background: #ff4e16"></iframe> 
+                        <iframe src="logs/inventory.html" style="height: 500px; background: #ff4e16"></iframe> 
                     </div>
                 </div>
             </div>
@@ -206,7 +206,7 @@
         document.getElementById('bluetooth').innerHTML = Heath.bluetooth;
         document.getElementById('audio').innerHTML = Heath.audio;
         document.getElementById('battery').innerHTML = Heath.battery;
-        document.getElementById('battery').innerHTML = Heath.CPU_FAN;
+        document.getElementById('fan').innerHTML = Heath.CPU_FAN;
         if (Heath.disk == "OK") {
             document.getElementById("disk-icon").style.color = "green";
         } else {

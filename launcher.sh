@@ -1,4 +1,5 @@
 #!/bin/bash
+echo 'User!123' | sudo -S echo "bonjour root"
 AUTO="true"
 #echo -e "disk=none\nwifi=none\nbluetooth=none\naudio=none\nbattery=none" > logs/health
 echo -e "var Heath = \n{\n    disk : \"\",\n    wifi : \"\",\n    bluetooth : \"\",\n    audio : \"\",\n    CPU_FAN: \"\",\n    battery : \"\"\n};" > darkpan/logs/health.js
@@ -8,8 +9,10 @@ wait () {
 		read -p "Press enter to continue"
 	fi
 }
-
+whoami
 cat darkpan/checkinglist | sed 's/\s/\n/g' | sed 's/\n//g' > checkinglist
+echo "What have to be tested:"
+echo $(cat darkpan/checkinglist)
 
 componentlist=$(cat checkinglist)
 
@@ -77,7 +80,7 @@ do
 	then
 		echo
 		echo "	CHECK PROCESSOR FAN"
-		/fantester/fantester.sh
+		fantester/fantester.sh
 		wait
-
+	fi
 done

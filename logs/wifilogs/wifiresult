@@ -1,5 +1,18 @@
-IN-USE  BSSID              SSID             MODE   CHAN  RATE      SIGNAL  BARS  SECURITY    
-        CC:19:A8:D1:8A:90  SFR_8A8F         Infra  11    260 Mb/s  87      ▂▄▆█  WPA1 WPA2   
-*       CC:19:A8:D1:8A:91  SFR_8A8F         Infra  100   540 Mb/s  85      ▂▄▆█  WPA1 WPA2   
-        CC:19:A8:D1:8A:97  --               Infra  100   540 Mb/s  85      ▂▄▆█  WPA2        
-        34:27:92:F2:CF:1A  FreeWifi_secure  Infra  6     195 Mb/s  55      ▂▄__  WPA2 802.1X 
+IN-USE  BSSID              SSID                          MODE   CHAN  RATE        SIGNAL  BARS  SECURITY    
+        18:64:72:9F:45:C0  Cage                          Infra  6     195 Mbit/s  77      ***   --          
+*       18:64:72:9F:45:D0  Cage                          Infra  116   405 Mbit/s  75      ***   --          
+        82:E8:2C:AD:24:44  DIRECT-44-HP M428fdw LJ       Infra  1     65 Mbit/s   62      ***   WPA2        
+        94:B4:0F:E1:E1:D0  --                            Infra  52    405 Mbit/s  62      ***   --          
+        90:B8:32:66:BB:14  WIFI@ESSOR.GROUP              Infra  6     130 Mbit/s  57      ***   WPA2 802.1X 
+        90:B8:32:66:BB:15  INVITE@ESSOR                  Infra  6     130 Mbit/s  57      ***   WPA2        
+        DC:00:B0:FC:12:08  EntropieWifiBckp              Infra  6     540 Mbit/s  54      **    WPA2        
+        70:FC:8C:40:A7:5A  CD0JH14VD0_ESSOR_SCO_31_DATA  Infra  11    195 Mbit/s  52      **    WPA2        
+        94:B4:0F:E1:E1:C0  --                            Infra  11    195 Mbit/s  50      **    --          
+        AC:A3:1E:E0:40:00  IDEM_VISITEURS                Infra  11    195 Mbit/s  45      **    WPA2        
+        70:4F:57:61:A5:6F  TP-Link_A570                  Infra  1     130 Mbit/s  39      **    WPA2        
+        70:4F:57:61:A5:6E  TP-Link_A570_5G               Infra  36    270 Mbit/s  35      **    WPA2        
+        DC:00:B0:FC:12:0C  EntropieWifiBckp              Infra  44    540 Mbit/s  35      **    WPA2        
+        DC:00:B0:FC:12:0E  EntropieWifiBckp              Infra  132   540 Mbit/s  35      **    WPA2        
+        90:B8:32:66:BB:24  WIFI@ESSOR.GROUP              Infra  161   270 Mbit/s  35      **    WPA2 802.1X 
+        90:B8:32:66:BB:25  INVITE@ESSOR                  Infra  161   270 Mbit/s  35      **    WPA2        
+        00:40:96:A0:8E:1C  Lise01                        Infra  3     11 Mbit/s   29      *     --          

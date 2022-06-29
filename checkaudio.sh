@@ -4,5 +4,5 @@ if [ "$(cat logs/audiologs/audio | grep "FAIL: Peak freq too high")" = "" ]; the
 	./chg_status.sh audio error
 else
 	echo "success :) "
-	./chg_status.sh audio ok
+	./chg_status.sh audio OK
 fi

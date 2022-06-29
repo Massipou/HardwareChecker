@@ -1,7 +1,3 @@
-WARNING: Signal overflow!
- WARNING: Found low peak 0,67 Hz, very close to DC
- WARNING: Found low peak 4,71 Hz, very close to DC
- FAIL: Peak freq too high 915,16 Hz
- FAIL: Peak freq too high 918,53 Hz
- FAIL: Peak freq too high 921,22 Hz
- FAIL: Peak freq too high 1374,09 Hz
+ALSA lib pcm_dmix.c:1075:(snd_pcm_dmix_open) unable to open slave
+Cannot open PCM playback device: Device or resource busy(-16)
+Exit playback thread fail: -16

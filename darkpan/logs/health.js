@@ -1,9 +1,9 @@
 var Heath = 
 {
-    disk : "OK",
+    disk : "",
     wifi : "",
-    bluetooth : "OK",
+    bluetooth : "",
     audio : "",
-    CPU_FAN : "OK",
+    CPU_FAN: "",
     battery : ""
 };
