@@ -62,7 +62,7 @@
                     <a href="index.html" class="nav-item nav-link"><i class="fa-solid fa-list me-2"></i>Inventoy</a>
                     <a href="webcam_tester" target="_blank" rel="noopener noreferrer" class="nav-item nav-link"><i class="fa-solid fa-video me-2"></i>Webcam Tester</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Elements</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Logs</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="button.html" class="dropdown-item">Disks</a>
                             <a href="typography.html" class="dropdown-item">Wifi</a>
@@ -96,7 +96,7 @@
             <!-- Content Start -->
             <div class="container-fluid pt-4 px-4"> 
                 <div class="row g-4">
-                    <div class="col-sm-6 col-xl-3">
+                    <a href="logs.php?cpn=disk" class="col-sm-6 col-xl-3 me-2">
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             <i id="disk-icon" class="fa-solid fa-hard-drive fa-3x"></i>
                             <div class="ms-3">
@@ -104,8 +104,8 @@
                                 <h6 id="disk" class="mb-0">Not checked</h6>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6 col-xl-3">
+                    </a>
+                    <a href="logs.php?cpn=wifi" class="col-sm-6 col-xl-3">
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             <i id="wifi-icon" class="fa-solid fa-wifi fa-3x"></i>
                             <div class="ms-3">
@@ -113,8 +113,8 @@
                                 <h6 id="wifi" class="mb-0">Not checked</h6>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6 col-xl-3">
+                    </a>
+                    <a href="logs.php?cpn=bluetooth" class="col-sm-6 col-xl-3">
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             <i id="bluetooth-icon" class="fa-brands fa-bluetooth fa-3x"></i>
                             <div class="ms-3">
@@ -122,7 +122,7 @@
                                 <h6 id="bluetooth" class="mb-0">Not checked</h6>
                             </div>
                         </div>
-                    </div>
+                    </a>
                     <div class="col-sm-6 col-xl-3">
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             <i id="audio-icon" class="fa-solid fa-headset fa-3x"></i>
@@ -164,6 +164,19 @@
             <div class="container-fluid pt-4 px-4">
                 <div class="bg-secondary rounded-top p-4">
                     <div class="row">
+                        <h3> Serial Number GR code: </h3>
+                        <div id="qrcode"></div>
+                        <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+                        <script src="logs/health.js"></script>
+                        <script type="text/javascript">
+                        new QRCode(document.getElementById("qrcode"), Heath.sn);
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid pt-4 px-4">
+                <div class="bg-secondary rounded-top p-4">
+                    <div class="row">
                         <div class="col-12 col-sm-6 text-center text-sm-start">
                             &copy; <a href="#">Your Site Name</a>, All Right Reserved. 
                         </div>
@@ -193,7 +206,6 @@
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     
@@ -209,32 +221,32 @@
         document.getElementById('fan').innerHTML = Heath.CPU_FAN;
         if (Heath.disk == "OK") {
             document.getElementById("disk-icon").style.color = "green";
-        } else {
+        } else if (Heath.disk != "") {
             document.getElementById("disk-icon").style.color = "red";
         }
         if (Heath.wifi == "OK") {
             document.getElementById("wifi-icon").style.color = "green";
-        } else {
+        } else if (Heath.wifi != "") {
             document.getElementById("wifi-icon").style.color = "red";
         }
         if (Heath.bluetooth == "OK") {
             document.getElementById("bluetooth-icon").style.color = "green";
-        } else {
+        } else if (Heath.bluetooth != "") {
             document.getElementById("bluetooth-icon").style.color = "red";
         }
         if (Heath.audio == "OK") {
             document.getElementById("audio-icon").style.color = "green";
-        } else {
+        } else if (Heath.audio != "") {
             document.getElementById("audio-icon").style.color = "red";
         }
         if (Heath.battery == "OK") {
             document.getElementById("battery-icon").style.color = "green";
-        } else {
+        } else if (Heath.battery != "") {
             document.getElementById("battery-icon").style.color = "red";
         }
         if (Heath.CPU_FAN == "OK") {
             document.getElementById("fan-icon").style.color = "green";
-        } else {
+        } else if (Heath.CPU_FAN != "") {
             document.getElementById("fan-icon").style.color = "red";
         }
         

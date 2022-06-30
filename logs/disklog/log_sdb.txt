@@ -1,0 +1,5 @@
+
+QUICK CHEK DISK ON sdb 
+
+/!\ smart support is disabled on sdb ! Can't check disks.
+No errors detected on sdb

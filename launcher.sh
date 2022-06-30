@@ -1,8 +1,7 @@
 #!/bin/bash
-echo 'User!123' | sudo -S echo "bonjour root"
+echo 'johnson2003' | sudo -S echo "bonjour root"
 AUTO="true"
 #echo -e "disk=none\nwifi=none\nbluetooth=none\naudio=none\nbattery=none" > logs/health
-echo -e "var Heath = \n{\n    disk : \"\",\n    wifi : \"\",\n    bluetooth : \"\",\n    audio : \"\",\n    CPU_FAN: \"\",\n    battery : \"\"\n};" > darkpan/logs/health.js
 
 wait () {
 	if [ $AUTO = "false" ]; then

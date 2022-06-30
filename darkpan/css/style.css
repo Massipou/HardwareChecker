@@ -285,3 +285,10 @@
     background: var(--dark);
     border-color: var(--primary);
 }
+/*** Added ***/
+#sidebar.hidden {
+    display: none;
+}
+#content.full-width {
+    width: 100%;
+}

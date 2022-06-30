@@ -1,6 +1,14 @@
 #!/bin/bash
 hardware_inventoy () {
 	echo "" > temp
+	echo "Identity:"
+	#sudo dmidecode -t1 |grep "Manufacturer:"|sed 's/\tManufacturer: //g'
+	sudo dmidecode -t1 |grep "Manufacturer:"
+	#sudo dmidecode -t1 |grep "Product Name:"|sed 's/\tProduct Name: //g'
+	sudo dmidecode -t1 |grep "Product Name:"
+	sn=$(sudo dmidecode -t1 |grep "Serial Number"|sed 's/\tSerial Number: //g')
+	./chg_status.sh sn $sn
+	sudo dmidecode -t1 |grep "Serial Number"
 	echo
 	echo 'Processor infos:'
 	grep -m 1 'model name' /proc/cpuinfo
@@ -44,7 +52,7 @@ hardware_inventoy () {
 
 	echo
 	echo "GPU infos"
-	sudo lshw -quiet -C display |grep "produit"
+	echo$(sudo lshw -quiet -C display |grep "produit")
 
 }
 hardware_inventoy > logs/inventory

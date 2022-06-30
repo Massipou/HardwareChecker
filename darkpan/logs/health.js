@@ -1,9 +1,10 @@
 var Heath = 
 {
-    disk : "",
-    wifi : "",
-    bluetooth : "",
-    audio : "",
-    CPU_FAN: "",
-    battery : ""
+    sn : "48FQNH2",
+    disk : "OK",
+    wifi : "OK",
+    bluetooth : "error",
+    audio : "error",
+    CPU_FAN : "OK",
+    battery : "error"
 };

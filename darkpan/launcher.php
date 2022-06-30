@@ -53,9 +53,10 @@
                 <div class="bg-secondary rounded-top p-4">
                     <div class="row">
                         <h3> Logs: </h3>
-                            <pre id="log"></pre>		
+                            <pre id="log" style="color: black; background: #00b308"></pre>		
                     </div>
                 </div>
+                <a href="/" class="btn btn-primary" >Retour</a>
             </div>
 	</div>
     </div>
@@ -76,7 +77,7 @@
     log('DISCONNECT');
   };
   ws.onmessage = function(event) {
-    log('MESSAGE: ' + event.data);
+    log('LOG: ' + event.data);
   };
 </script>
 

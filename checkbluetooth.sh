@@ -16,6 +16,7 @@ else
 	else
 		echo "fail!"
 		./chg_status.sh bluetooth error
+		echo "failed to activate bluetooth" > logs/bluetooth/bluedev
 		exit
 	fi
 fi
@@ -29,8 +30,11 @@ echo $devices
 if [ "$devices"  = "" ]
 then
 	echo "nothing detected or controller error!"
+	echo "nothing detected or controller error!" >> logs/bluetooth/bluedev
 	./chg_status.sh bluetooth error
 else
 	echo "Device detected !"
 	./chg_status.sh bluetooth OK
 fi
+
+sed 's/$/<br>/' logs/bluetooth/bluedev > darkpan/bluetooth.html

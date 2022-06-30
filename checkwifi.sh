@@ -9,3 +9,4 @@ else
 	echo "/!\wifi doesn't work"
 	./chg_status.sh wifi error
 fi
+sed 's/$/<br>/' logs/wifilogs/wifiresult > darkpan/logs/wifi.html
