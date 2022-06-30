@@ -1,3 +1,3 @@
  WARNING: Found low peak 0.67 Hz, very close to DC
- WARNING: Found low peak 2.69 Hz, very close to DC
- FAIL: Peak freq too low 21.53 Hz
+ FAIL: Peak freq too low 61.91 Hz
+ FAIL: Peak freq too high 917.85 Hz

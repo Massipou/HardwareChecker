@@ -53,7 +53,7 @@
                 <div class="bg-secondary rounded-top p-4">
                     <div class="row">
                         <h3> Logs: </h3>
-                            <pre id="log" style="color: black; background: #00b308"></pre>		
+                            <pre id="log" style="color: black; background: #00b308"></pre>
                     </div>
                 </div>
                 <a href="/" class="btn btn-primary" >Retour</a>
@@ -94,6 +94,8 @@ if(filter_has_var(INPUT_POST,'checkbox_bluetooth')) {
 }
 if(filter_has_var(INPUT_POST,'checkbox_audio')) {
         $command .= "audio ";
+	/*$back = shell_exec('./cha.sh');*/
+	/*echo "<pre>$back</pre>";*/
 }
 if(filter_has_var(INPUT_POST,'checkbox_fan')) {
         $command .= "fan ";
@@ -106,4 +108,5 @@ echo $command;
 
 $pipe = shell_exec($command);
 echo "<pre>$pipe</pre>";
+
 ?>

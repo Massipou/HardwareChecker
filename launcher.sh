@@ -1,7 +1,14 @@
 #!/bin/bash
-echo 'johnson2003' | sudo -S echo "bonjour root"
+. islive.cfg
+
+echo "is live ? $islive"
+
+if [ "$islive" == "false" ]
+then
+	echo 'User!123' | sudo -S echo "bonjour root"
+fi
+
 AUTO="true"
-#echo -e "disk=none\nwifi=none\nbluetooth=none\naudio=none\nbattery=none" > logs/health
 
 wait () {
 	if [ $AUTO = "false" ]; then
