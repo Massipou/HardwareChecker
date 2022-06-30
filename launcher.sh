@@ -3,7 +3,7 @@
 
 echo "is live ? $islive"
 
-if [ "$islive" == "false" ]
+if [ "$islive" != "true" ]
 then
 	echo 'User!123' | sudo -S echo "bonjour root"
 fi
@@ -11,7 +11,7 @@ fi
 AUTO="true"
 
 wait () {
-	if [ $AUTO = "false" ]; then
+	if [ $AUTO == "false" ]; then
 		read -p "Press enter to continue"
 	fi
 }

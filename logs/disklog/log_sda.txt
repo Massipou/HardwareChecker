@@ -5,3 +5,9 @@ Please note the following marginal Attributes:
 ID# ATTRIBUTE_NAME          FLAG     VALUE WORST THRESH TYPE      UPDATED  WHEN_FAILED RAW_VALUE
 195 Cumulativ_Corrected_ECC 0x002f   100   000   050    Pre-fail  Always   In_the_past 0
 
+sda error type:
+Pre-fail
+
+sda error name:
+Cumulativ_Corrected_ECC
+

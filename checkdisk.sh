@@ -18,7 +18,7 @@ do
 done
 echo -e "\n Please Wait 2 minutes ..."
 ./timer.sh 1
-sleep 2
+sleep 130
 echo "" > darkpan/logs/disk.html
 for disk in $lines
 do
@@ -34,6 +34,10 @@ do
 		echo -e "\nerreur sur $disk \n"
 		cat temp
 		cat temp >> logs/disklog/log_$disk.txt
+		echo "$disk error type:" >> logs/disklog/log_$disk.txt
+		cat temp | awk '{print $7}' | tail -n +3 >> logs/disklog/log_$disk.txt
+		echo "$disk error name:" >> logs/disklog/log_$disk.txt
+		cat temp | awk '{print $2}' | tail -n +3 >> logs/disklog/log_$disk.txt
 		./chg_status.sh disk error
 	fi
 	

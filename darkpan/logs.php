@@ -51,7 +51,7 @@
         <div class="container-xxl pt-4 px-4">
             <div class="bg-secondary rounded-top p-4">
                 <div class="row">
-                    <h3> Logs: </h3>
+                    <h3> Logs of <?php echo $_GET["cpn"]; ?>: </h3>
                     <iframe src="logs/<?php echo $_GET["cpn"]; ?>.html" style="height: 500px; background: #ff4e16"></iframe>
                 </div>
             </div>

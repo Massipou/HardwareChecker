@@ -11,6 +11,7 @@ do
 	if [ $fanspeed -ge 300 ]
 	then
 		echo "Fan is working "
+		echo -e "\nFan is working " >> logs/fanlogs/fanlogs
 		./chg_status.sh CPU_FAN OK
 		start="false"
 	elif [ $cputemp -ge 68 ]
@@ -23,3 +24,5 @@ do
 	sleep 1
 done
 killall fantester
+
+sed 's/$/<br>/' logs/fanlogs/fanlogs > darkpan/logs/fan.html
