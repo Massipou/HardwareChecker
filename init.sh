@@ -15,7 +15,7 @@ rm logs/battery/*
 rm logs/bluetooth/*
 rm logs/disk/disklog/*
 rm logs/fanlogs/*
-rm logs/inventory
+echo "" > logs/inventory
 rm logs/wifilogs/*
 
 
@@ -30,3 +30,4 @@ else
 fi
 
 sudo chmod g+w darkpan/checkinglist
+sudo chmod -R g+w darkpan/logs

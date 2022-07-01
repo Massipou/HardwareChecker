@@ -37,4 +37,4 @@ else
 	./chg_status.sh bluetooth OK
 fi
 
-sed 's/$/<br>/' logs/bluetooth/bluedev > darkpan/bluetooth.html
+sed 's/$/<br>/' logs/bluetooth/bluedev > darkpan/logs/bluetooth.html

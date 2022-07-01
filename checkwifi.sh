@@ -1,3 +1,4 @@
+touch logs/wifilogs/wifiresult
 nmcli dev wifi list > logs/wifilogs/wifiresult
 wifi_count=$(wc -l < logs/wifilogs/wifiresult)
 echo "wifiresult: $wifiresult"
