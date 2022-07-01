@@ -1,16 +1,18 @@
 IN-USE  BSSID              SSID                          MODE   CHAN  RATE        SIGNAL  BARS  SECURITY    
-        94:B4:0F:E1:E1:C0  --                            Infra  11    195 Mbit/s  72      ***   --          
-        94:B4:0F:E1:E1:D0  --                            Infra  52    405 Mbit/s  67      ***   --          
-*       18:64:72:9F:45:D0  Cage                          Infra  116   405 Mbit/s  65      ***   --          
-        82:E8:2C:AD:24:44  DIRECT-44-HP M428fdw LJ       Infra  1     65 Mbit/s   64      ***   WPA2        
-        90:B8:32:66:BB:15  INVITE@ESSOR                  Infra  6     130 Mbit/s  60      ***   WPA2        
-        70:FC:8C:40:A7:5A  CD0JH14VD0_ESSOR_SCO_31_DATA  Infra  11    195 Mbit/s  59      ***   WPA2        
+        18:64:72:9F:45:C0  Cage                          Infra  6     195 Mbit/s  70      ***   --          
+        FE:7D:D2:B6:B1:82  Thierry                       Infra  6     130 Mbit/s  70      ***   WPA2        
+        70:FC:8C:40:A7:5A  CD0JH14VD0_ESSOR_SCO_31_DATA  Infra  11    195 Mbit/s  69      ***   WPA2        
+*       18:64:72:9F:45:D0  Cage                          Infra  116   405 Mbit/s  69      ***   --          
+        82:E8:2C:AD:24:44  DIRECT-44-HP M428fdw LJ       Infra  1     65 Mbit/s   67      ***   WPA2        
+        94:B4:0F:E1:E1:D0  --                            Infra  52    405 Mbit/s  64      ***   --          
+        90:B8:32:66:BB:14  WIFI@ESSOR.GROUP              Infra  1     130 Mbit/s  62      ***   WPA2 802.1X 
+        90:B8:32:66:BB:15  INVITE@ESSOR                  Infra  1     130 Mbit/s  62      ***   WPA2        
         AC:A3:1E:E0:40:00  IDEM_VISITEURS                Infra  11    195 Mbit/s  59      ***   WPA2        
-        90:B8:32:66:BB:14  WIFI@ESSOR.GROUP              Infra  6     130 Mbit/s  57      ***   WPA2 802.1X 
-        70:4F:57:61:A5:6F  TP-Link_A570                  Infra  1     130 Mbit/s  55      **    WPA2        
-        DC:00:B0:FC:12:0E  EntropieWifiBckp              Infra  132   540 Mbit/s  37      **    WPA2        
-        70:4F:57:61:A5:6E  TP-Link_A570_5G               Infra  36    270 Mbit/s  35      **    WPA2        
-        DC:00:B0:FC:12:0C  EntropieWifiBckp              Infra  44    540 Mbit/s  35      **    WPA2        
-        18:64:72:94:23:30  --                            Infra  44    405 Mbit/s  35      **    --          
-        90:B8:32:66:BB:24  WIFI@ESSOR.GROUP              Infra  165   270 Mbit/s  35      **    WPA2 802.1X 
-        90:B8:32:66:BB:25  INVITE@ESSOR                  Infra  165   270 Mbit/s  35      **    WPA2        
+        70:4F:57:61:A5:6F  TP-Link_A570                  Infra  1     130 Mbit/s  57      ***   WPA2        
+        DC:00:B0:FC:12:0E  EntropieWifiBckp              Infra  132   540 Mbit/s  40      **    WPA2        
+        90:B8:32:66:BB:24  WIFI@ESSOR.GROUP              Infra  165   270 Mbit/s  40      **    WPA2 802.1X 
+        90:B8:32:66:BB:25  INVITE@ESSOR                  Infra  165   270 Mbit/s  40      **    WPA2        
+        70:4F:57:61:A5:6E  TP-Link_A570_5G               Infra  36    270 Mbit/s  37      **    WPA2        
+        AC:A3:1E:E0:40:10  IDEM_VISITEURS                Infra  149   405 Mbit/s  35      **    WPA2        
+        00:40:96:A0:8E:1C  Lise01                        Infra  3     11 Mbit/s   32      **    --          
+        18:64:72:94:23:20  --                            Infra  6     195 Mbit/s  29      *     --          
