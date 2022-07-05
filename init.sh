@@ -14,9 +14,9 @@ echo "" > checkinglist
 rm  logs/audiologs/*
 rm logs/battery/*
 rm logs/bluetooth/*
-rm logs/disk/disklog/*
+rm logs/disk/*
 rm logs/fanlogs/*
-echo "" > logs/inventory
+rm logs/inventory
 rm logs/wifilogs/*
 
 
