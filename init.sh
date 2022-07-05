@@ -11,14 +11,13 @@ echo "" > darkpan/logs/bluetooth.html
 echo "" > darkpan/logs/fan.html
 echo "" > checkinglist
 
-rm  logs/audiologs/*
-rm logs/battery/*
-rm logs/bluetooth/*
-rm logs/disk/*
-rm logs/fanlogs/*
-rm logs/inventory
-rm logs/wifilogs/*
-
+echo "" >  logs/audiologs/audio
+echo "" > logs/battery/battery
+echo "" > logs/bluetooth/battery
+echo "" > logs/disklog/log_sda
+echo "" > logs/fanlogs/fanlogs
+echo "" > logs/inventory
+echo "" > logs/wifilogs/wifiresult
 
 if [ "$1" = "live" ]
 then
