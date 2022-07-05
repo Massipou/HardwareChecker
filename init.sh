@@ -8,6 +8,7 @@ echo "" > darkpan/logs/inventory.html
 echo "" > darkpan/logs/disk.html
 echo "" > darkpan/logs/wifi.html
 echo "" > darkpan/logs/bluetooth.html
+echo "" > darkpan/logs/fan.html
 echo "" > checkinglist
 
 rm  logs/audiologs/*
@@ -25,6 +26,7 @@ then
 	sudo chown -R :user *
 	sudo chown -R user:user logs/
 	sudo chown -R www-data:user darkpan/
+	sudo chmod g+w checkinglist
 else
 	echo "islive=false" > islive.cfg
 fi
