@@ -5,7 +5,7 @@ echo "is live ? $islive"
 
 if [ "$islive" != "true" ]
 then
-	echo 'johnson2003' | sudo -S echo "bonjour root"
+	echo 'User!123' | sudo -S echo "bonjour root"
 fi
 
 AUTO="true"
