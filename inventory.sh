@@ -55,9 +55,9 @@ hardware_inventoy () {
 
         echo
         echo "GPU infos"
-        echo $(sudo lshw -quiet -C display |grep "produit")
+        echo $(sudo lshw -quiet -C display |grep "produit") >&1
 
 }
-hardware_inventoy >&2 logs/inventory
+hardware_inventoy > logs/inventory
 sed 's/$/<br>/' logs/inventory > darkpan/logs/inventory.html
 cat logs/inventory
