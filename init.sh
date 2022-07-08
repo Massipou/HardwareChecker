@@ -1,7 +1,7 @@
 #!/bin/bash
 #echo -e "disk=none\nwifi=none\nbluetooth=none\naudio=none\nbattery=none" > logs/health
 #sudo chown www-data:user darkpan/checkinglist
-user="user"
+user=$(whoami)
 
 echo -e "var Heath = \n{\n    sn : \"\",\n    disk : \"\",\n    wifi : \"\",\n    bluetooth : \"\",\n    audio : \"\",\n    CPU_FAN: \"\",\n    battery : \"\"\n};" > darkpan/logs/health.js
 echo "" > logs/inventory
@@ -28,7 +28,7 @@ then
 	sudo chown -R user:www-data darkpan/
 else
 	echo "islive=false" > islive.cfg
-	sudo chown -R $user:$user logs/
+	sudo chown -R $user:www-data logs/
 	sudo chown -R $user:www-data darkpan/
 fi
 
