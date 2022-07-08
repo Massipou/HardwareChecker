@@ -18,10 +18,22 @@ do
                 cputemp=$(sensors| grep 'CPU' | sed -E 's/\s|CPU:|s|C|°|\..*//g'| sed 's/+//')  # degrees
                 if [ "$cputemp" = "" ]; then
                         cputemp=$(sensors | grep "Package id $disk" | sed -E "s/\s|Package id $disk:|s|C|°|\..*//g"| sed 's/+//')
+			if [ "$cputemp" = "" ]; then
+				echo '/!\ Can t test CPU temperature ! ' >> logs/fanlogs/fanlogs
+				tail -1 logs/fanlogs/fanlogs
+				./chg_status.sh CPU_FAN error
+				exit
+			fi
                 fi
                 fanspeed=$(sensors| grep 'Processor Fan' |sed -E 's/Processor Fan:|RPM|\s//g'|sed 's/(.*)//g')  # RPM
                 if [ "$fanspeed" = "" ]; then
                         fanspeed=$(sensors| grep "fan$i" |sed -E "s/fan$i:|RPM|\s//g"|sed 's/(.*)//g')
+			if [ "$fanspeed" = "" ]; then
+                                echo '/!\ Can t test CPU FAN ! ' >> logs/fanlogs/fanlogs
+                                tail -1 logs/fanlogs/fanlogs
+                                ./chg_status.sh CPU_FAN error
+                                exit
+			fi
                 fi
                 echo "CPU temperature: $cputemp °C / CPU Fan Speed: $fanspeed RPM" >> logs/fanlogs/fanlogs
                 tail -1 logs/fanlogs/fanlogs
