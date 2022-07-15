@@ -43,7 +43,7 @@ do
                         echo "Fan is working "
                         ./chg_status.sh CPU_FAN OK
                         start="false"
-                elif [ $cputemp -ge 80 ]
+                elif [ $cputemp -ge 85 ]
                 then
                         echo "Le ventilateur $i  ne tourne pas alors que la temperature du processeur est >= 80°C Le ventilateur est sois pas assez puissant, soit il ne fonctionne pas." >> logs/fanlogs/fanlogs
                         tail -1 logs/fanlogs/fanlogs

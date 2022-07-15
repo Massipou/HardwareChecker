@@ -1,5 +1,6 @@
 #!/bin/bash
 echo -e "\nBluetooth tester\n"
+sudo rfkill unblock all
 echo "checking bluetooth service:"
 ./remallbluedevices.sh
 isactive=$(systemctl is-active bluetooth)
