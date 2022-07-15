@@ -41,7 +41,7 @@ hardware_inventoy () {
                 disk+=($device)
                 name+=("`cat "/sys/class/block/$device/device/model"`")
                 size+=("`cat "/sys/class/block/$device/size"`")
-        done < <(find "/dev/" -regex '/dev/sd[a-z]\|/dev/vd[a-z]\|/dev/hd[a-z]\|/dev/nvme[0-9]n[1-9]|/dev/mmcblk[1-9]' -print0)
+        done < <(find "/dev/" -regex '/dev/sd[a-z]\|/dev/vd[a-z]\|/dev/hd[a-z]\|/dev/nvme[0-9]n[1-9]\|/dev/mmcblk[1-9]' -print0)
 
         for i in `seq 0 $((${#disk[@]}-1))`; do
                 bsize=${size[$i]}
