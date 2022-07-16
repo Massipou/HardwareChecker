@@ -1,5 +1,5 @@
 #!/bin/bash
-upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E "energy-full-design|energy-full|capacity|percentage" | sed 's/ *//g' | sed 's/:/=/g' > logs/battery/battery
+upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E "energy-full-design|energy-full|capacity|percentage" | sed 's/ *//g'  | sed 's/:/=/' > logs/battery/battery
 upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E "energy-full-design|energy-full|capacity"
 capacity=$(cat logs/battery/battery|grep capacity | sed 's/capacity=//' | sed 's/%//' | sed 's/\,.*//' | sed 's/\..*//')
 echo $capacity
@@ -15,4 +15,4 @@ else
 	echo -e "\nBattery state <= 60%" >> logs/battery/battery
 fi
 
-sed 's/$/<br>/' logs/battery/battery > darkpan/logs/battery.html
+sed 's/$/<br>/' logs/battery/battery | sed 's/=/:/'  > darkpan/logs/battery.html
