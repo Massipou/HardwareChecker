@@ -21,6 +21,7 @@ do
 			if [ "$cputemp" = "" ]; then
 				echo '/!\ Can t test CPU temperature ! ' >> logs/fanlogs/fanlogs
 				tail -1 logs/fanlogs/fanlogs
+				sed 's/$/<br>/' logs/fanlogs/fanlogs > darkpan/logs/fan.html
 				./chg_status.sh CPU_FAN error
 				exit
 			fi
@@ -31,6 +32,7 @@ do
 			if [ "$fanspeed" = "" ]; then
                                 echo '/!\ Can t test CPU FAN ! ' >> logs/fanlogs/fanlogs
                                 tail -1 logs/fanlogs/fanlogs
+				sed 's/$/<br>/' logs/fanlogs/fanlogs > darkpan/logs/fan.html
                                 ./chg_status.sh CPU_FAN error
                                 exit
 			fi
